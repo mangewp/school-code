@@ -1,0 +1,15 @@
+from curses.ascii import isdigit
+
+
+def main():
+    longString = input("Enter a sentance: ")
+    search = input("Enter a word to search: ")
+    
+    if search in longString:
+        print("\nThe word", search, "appears in the sentance below.")
+    else:
+        print("\nThe word", search, "does not appear in the sentance.")
+        
+    print("\n", longString "\n")
+        
+    main()

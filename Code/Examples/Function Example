@@ -1,0 +1,7 @@
+def message():
+    print("it is eder")
+    print("python master")
+
+print ("who is the GOAT?")
+
+message()

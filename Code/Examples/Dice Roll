@@ -1,0 +1,5 @@
+import random as r
+
+randnum = r.randint(1,6)
+print('Dice 1: ', randnum)
+print('Dice 2: ', r.randint(1,6))

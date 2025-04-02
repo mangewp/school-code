@@ -1,0 +1,14 @@
+def main():
+    again = "y"
+    while again == "y":
+    
+        name = input("Enter name: ")
+        phone =  input("Enter phone number: ")
+        
+        outputfile = open("my_info.txt", "a")
+        
+        outputfile.write(name + "\n")
+        outputfile.write(phone + "\n")
+        
+        outputfile.close()
+        print(name + "and" + phone + "were added to the myinfo.txt file")

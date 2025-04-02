@@ -1,0 +1,10 @@
+def main():
+    try:
+        hours = int(input("how many hours did you work?: "))
+        payRate = (float(input("Enter your hourly pay rate: ")))
+        grossPay = hours * payRate
+        
+        print(f'Gross pay: ${grossPay:,.2f}')
+    except ValueError:
+        print("ERROR: Hours worked and hourly pay rate must be valid numbers.")
+main()

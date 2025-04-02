@@ -1,0 +1,17 @@
+def main():
+    for_loop_count()
+    while_loop_count()
+
+def for_loop_count():
+    print("this is from a for loop.")
+    for x in [1,2,3,4,5,]:
+        print(x)
+        
+def while_loop_count():
+    print('n\This is from a while loop.')
+    counter = 1
+    while counter <= 5:
+        print(counter)
+        counter += 1
+        
+main()

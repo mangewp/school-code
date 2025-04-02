@@ -1,0 +1,14 @@
+def main():
+    intro()
+    cupsNeeded = int(input("enter number of cups: "))
+    cupsToOunces(cupsNeeded)
+
+def intro():
+    print("This program converts cups into ounces.")
+    print("1 cup = 8 fluid ounces.")
+
+def cupsToOunces(cups):
+    ounces = cups * 8
+    print(f"That converts to {ounces} ounces. ")
+
+main()

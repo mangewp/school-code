@@ -1,0 +1,15 @@
+def main():
+    count = 0
+    string = input('Enter a sentance: ')
+    
+    for c in string:
+        if c == "T" or c == "t":
+            count += 1
+            
+    print (f'The letter T appears {count}, times.')
+        
+main()
+
+l = "abc"
+l += "def"
+print(l)

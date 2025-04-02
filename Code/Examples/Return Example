@@ -1,0 +1,13 @@
+from socket import getnameinfo
+
+
+def main():
+    firstName, lastName = getName()
+    print(lastName, firstName)
+
+def getName():
+    first = input("Enter your first name: ")
+    last = input("Enter your last name: ")
+    return first, last
+
+main()

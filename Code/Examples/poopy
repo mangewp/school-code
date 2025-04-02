@@ -1,0 +1,8 @@
+from numbers import Number
+
+
+def count():
+    for (num) in range(1,6):
+        print(num)
+        
+count()

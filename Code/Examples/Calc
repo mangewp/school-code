@@ -1,0 +1,11 @@
+def main():
+    numCalc(x = 1, y = 2, z = 3)
+    
+def numCalc(x,y,z):
+    mul = x * y * z
+    add = x+y+z
+    sub = x-y-z
+    div = x/y/z
+    print(mul, add, sub, div)
+
+main()

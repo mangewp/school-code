@@ -1,0 +1,8 @@
+import Math_Module
+
+def main():
+    num = Math_Module.getNum()
+    Math_Module.showSquare(num)
+    Math_Module.showPi(num)
+    
+main()

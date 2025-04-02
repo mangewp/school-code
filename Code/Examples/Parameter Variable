@@ -1,0 +1,9 @@
+def main():
+    value = int(input("Enter a number: "))
+    showDouble(value)
+
+def showDouble(num):
+    result = num * 2
+    print(result)
+    
+main()
