@@ -11,9 +11,9 @@ usage() {
   echo "If no filename is given, we use /home/ruizhao/CYBR3350/HW4/access_log"
   echo
   echo "Request:"
-  echo "-h          Print this long message"
-  echo "IPs         Print a sorted list of all unique IP addresses that have accessed the server, and a total count at the end"
-  echo "Users       Print all unique user names whose web pages have been accessed, and a total count at the end"
+  echo "  -h            Print this long message"
+  echo "  IPs           Print a sorted list of all unique IP addresses that have accessed the server, and a total count at the end"
+  echo "  Users         Print all unique user names whose web pages have been accessed, and a total count at the end"
 }
 
 # Check args
@@ -33,7 +33,7 @@ case $REQUEST in
     exit 0
     ;;
 
-  IPs)
+  IPs|ips)
     if [ ! -f "$LOGFILE" ]; then
       echo "Error: Log file '$LOGFILE' not found."
       exit 1
@@ -42,7 +42,7 @@ case $REQUEST in
     rm -f /tmp/astats_ips.$$
     ;;
 
-  Users)
+  Users|users)
     if [ ! -f "$LOGFILE" ]; then
       echo "Error: Log file '$LOGFILE' not found."
       exit 1
